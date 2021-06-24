@@ -1,0 +1,34 @@
+# 编辑器问题
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='gvim'
+fi
+
+# 解决scala命令报错的问题
+export TERM=xterm-color
+
+#Nodejs
+export NODE_PATH=$HOME/.node_modules
+export PATH=$NODE_PATH/bin:$PATH
+
+#java
+export JAVA_HOME=/opt/java/jdk1.8.0_231
+export PATH=$JAVA_HOME/bin:$PATH
+export CLASSPATH=.:$JAVA_HOME\lib\dt.jar:$JAVA_HOME\lib\tools.jar
+export CLASSPATH=".:/usr/local/lib/antlr-4.7.2-complete.jar:$CLASSPATH"
+
+#go
+export GOROOT=/usr/lib/go
+export GOPATH=$HOME/Develop/go_space
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+
+#hadoop
+export HADOOP_HOME=/opt/spark-2.4.6-bin-hadoop2.6
+export PATH=$SPARK_HOME/bin:$PATH
+
+#scala
+export SCALA_HOME=/opt/scala-2.11.12
+export PATH=$SCALA_HOME/bin:$PATH
+export SBT_HOME=/opt/sbt
+export PATH=$SBT_HOME/bin:$PATH

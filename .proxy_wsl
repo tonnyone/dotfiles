@@ -1,0 +1,5 @@
+export PROXY_PORT=1080
+export WINDOWS_NAMESERVER=`cat /etc/resolv.conf|grep nameserver|awk '{print $2}'`
+export WIN_PROXY=socks5://$WINDOWS_NAMESERVER:$PROXY_PORT
+export HTTP_PROXY=$WIN_PROXY
+export HTTPS_PROXY=$WIN_PROXY

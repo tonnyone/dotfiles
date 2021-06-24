@@ -1,0 +1,4 @@
+#nodejs
+export NODE_HOME=/opt/node-v10.23.2-linux-x64
+export NODE_PATH=/home/lsq/.node_modules
+export PATH=$NODE_PATH/bin:$NODE_HOME/bin:$PATH

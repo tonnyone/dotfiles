@@ -1,0 +1,19 @@
+# tmux 临时session保存目录，方式重启丢失
+export TMUX_TMPDIR=~/.tmux/tmp
+
+export PATH=/usr/local/bin:$PATH
+export PATH=~/.node_modules/bin:$PATH
+export NVM_DIR="$HOME/.nvm"
+
+# GIT安装目录
+export GOROOT=/usr/local/go
+# 自定义创建的目录
+export GOPATH=~/Develop/go
+# 追加到PATH
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH
+
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+unset npm_config_prefix
